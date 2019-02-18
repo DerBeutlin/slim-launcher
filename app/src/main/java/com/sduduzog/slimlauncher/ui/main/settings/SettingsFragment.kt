@@ -49,7 +49,7 @@ class SettingsFragment : StatusBarThemeFragment() {
 
             override fun getMovementFlags(recyclerView: RecyclerView, viewHolder: RecyclerView.ViewHolder): Int {
                 val dragFlags = ItemTouchHelper.UP or ItemTouchHelper.DOWN
-                val swipeFlags = ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
+                val swipeFlags = 0;
                 return makeMovementFlags(dragFlags, swipeFlags)
             }
 
