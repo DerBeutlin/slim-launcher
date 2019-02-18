@@ -209,22 +209,12 @@ class MainFragment : StatusBarThemeFragment(), MainActivity.OnBackPressedListene
                         Uri.parse("http://play.google.com/store/apps/details?id=" + context?.packageName)))
             }
         }
-        changeLauncherText.setOnClickListener {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                startActivity(Intent(Settings.ACTION_HOME_SETTINGS))
-            }
-        }
         aboutText.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.action_mainFragment_to_aboutFragment))
 
         deviceSettingsText.setOnClickListener {
             startActivity(Intent(Settings.ACTION_SETTINGS))
         }
-        changeLauncherText.setOnClickListener {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                startActivity(Intent(Settings.ACTION_HOME_SETTINGS))
             }
-        }
-    }
 
     private fun doBounceAnimation(targetView: View) {
         targetView.animate()

@@ -67,14 +67,6 @@
                 android:text="@string/main_options_settings"
                 android:textSize="24sp" />
 
-            <TextView
-                android:id="@+id/changeLauncherText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:padding="8dp"
-                android:text="@string/main_options_change_launcher"
-                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/rateAppText"
